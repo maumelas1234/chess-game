@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #8B4513; /* Brown background */
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    gap: 0;
+    justify-content: center;
+    margin: 0 auto;
+    border: 5px solid #333;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.cell.white {
+    background-color: #f6f1e8; /* Light squares */
+}
+
+.cell.black {
+    background-color: #000000; /* Dark squares */
+}
+
+.piece {
+    font-size: 40px;
+}
+
+.piece.white {
+    color: rgb(138, 229, 247);
+}
+
+.piece.black {
+    color: rgb(113, 84, 22);
+}
+
+.selected {
+    border: 2px solid yellow;
+}
+
+.check {
+    border: 2px solid red;
+}
